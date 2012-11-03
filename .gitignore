@@ -2,7 +2,7 @@
 ######################
 cache/*
 cache.db*
-config.ini*
+config.ini.*
 Logs/*
 sickbeard.db*
 autoProcessTV/autoProcessTV.cfg
@@ -41,3 +41,7 @@ ehthumbs.db
 Thumbs.db
 .directory
 *~
+
+# My files #
+############
+torrents/*
