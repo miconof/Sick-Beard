@@ -7,5 +7,5 @@
 ## SSD_OPTS=        #$EXTRA_SSD_OPTS, extra start-stop-daemon option like " --group=users"
 
 SB_USER=pi
-SB_HOME=~/repos/Sick-Beard
-SB_DATA=~/repos/Sick-Beard
+SB_HOME=/home/$SB_USER/repos/Sick-Beard
+SB_DATA=/home/$SB_USER/repos/Sick-Beard
