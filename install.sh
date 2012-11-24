@@ -5,6 +5,7 @@ cd `dirname $0`
 echo "Copying config files..."
 cp init.ubuntu /etc/init.d/sickbeard
 cp defaults /etc/default/sickbeard
+su pi -c 'mkdir torrents'
 
 echo "Installing periscope..."
 apt-get -y install python-setuptools python-beautifulsoup
