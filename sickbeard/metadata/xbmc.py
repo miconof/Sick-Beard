@@ -22,6 +22,8 @@ import sickbeard
 
 import generic
 
+import os.path
+
 from sickbeard.common import XML_NSMAP
 from sickbeard import logger, exceptions, helpers
 from sickbeard.exceptions import ex
@@ -228,7 +230,7 @@ class XBMCMetadata(generic.GenericMetadata):
 
             title = etree.SubElement( episode, "title" )
             if curEpToWrite.name != None:
-                title.text = curEpToWrite.name
+                title.text = os.path.splitext(os.path.basename(os.path.normpath(self.get_episode_file_path(ep_obj))))[0]
 
             season = etree.SubElement( episode, "season" )
             season.text = str(curEpToWrite.season)
