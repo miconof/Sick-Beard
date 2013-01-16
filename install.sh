@@ -14,6 +14,7 @@ mkdir torrents
 
 echo "Installing periscope..."
 sudo apt-get -y install python-setuptools python-beautifulsoup
+mkdir -p ~/.config
 cd ..
 git clone https://github.com/patrickdessalle/periscope
 cd periscope && sudo python setup.py install
